@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="./css/style.css" />
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -13,17 +14,6 @@
         />
 
         <title>Frontend Mentor | Results summary component</title>
-
-        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-        <style>
-            .attribution {
-                font-size: 11px;
-                text-align: center;
-            }
-            .attribution a {
-                color: hsl(228, 45%, 44%);
-            }
-        </style>
     </head>
     <body>
         <main class="card">
@@ -42,31 +32,20 @@
             <section class="summary">
                 <h3>Summary</h3>
                 <div class="rows">
-                    <!-- row will dynamically create json in javascript -->
-                    <div class="row">
-                        <div class="bage">
-                            <img
-                                src="./assets/images/icon-reaction.svg"
-                                alt="icon"
-                            />
-                            <p>Reaction</p>
-                        </div>
-                        <div>
-                            <p><b>80</b> / 100</p>
-                        </div>
-                    </div>
+                    <!-- dynamically create rows using data.json using javascript  -->
                 </div>
-                <button class="btn">Contine</button>
+                <button class="btn">Continue</button>
             </section>
-        </main>
 
-        <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="#">Dexter Dick</a>.
-        </div>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">Dexter Dick</a>.
+            </div>
+        </main>
+        <script type="module" src="./js/script.js"></script>
     </body>
 </html>
