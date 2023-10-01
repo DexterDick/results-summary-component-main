@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+    /* Colors */
+
+    /* Primary */
+
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.result {
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        var(--Light-slate-blue-background),
+        var(--Light-royal-blue-background)
+    );
+    padding-top: 3rem;
+    border-radius: 0 0 10% 10%;
+}
+
+.result h3 {
+    color: var(--Light-lavender);
+}
+
+.result h2 {
+    color: var(--White);
+}
+
+.result p {
+    width: 76%;
+    margin: 2rem auto 3rem auto;
+    color: var(--Light-lavender);
+    border-radius: 30px;
+}
+
+.circle {
+    background: linear-gradient(
+        to bottom,
+        var(--Violet-blue-circle),
+        var(--Persian-blue-circle)
+    );
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+
+.circle h1 {
+    font-size: 6rem;
+    padding-top: 3rem;
+    color: var(--White);
+}
+
+.circle p {
+    color: var(--Light-lavender);
+    opacity: 0.5;
+    margin-top: 0;
+    padding-bottom: 2rem;
+}
+
+.summary {
+    text-align: center;
+}
+
+.bage {
+    text-align: center;
+    display: flex;
+}
+
+.row {
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
