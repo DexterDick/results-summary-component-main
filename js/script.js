@@ -4,7 +4,7 @@ let rowTemp = "";
 data.forEach(
     (el) =>
         (rowTemp += `
-        <div class="row">
+        <div class="row ${el.rowcolor}">
                         <div class="bage">
                             <img
                                 src="${el.icon}"

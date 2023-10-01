@@ -101,8 +101,8 @@ body {
     padding-bottom: 2rem;
 }
 
-.summary {
-    text-align: center;
+.summary h3 {
+    margin: 2rem 0 2rem 2rem;
 }
 
 .bage {
@@ -110,7 +110,66 @@ body {
     display: flex;
 }
 
+.bage img {
+    margin-right: 1.5rem;
+}
+
 .row {
+    margin: 0 auto 2rem;
+    padding: 2rem;
+    width: 90%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Row colors */
+
+.row.red {
+    color: var(--Light-red);
+    background-color: hsl(0, 100%, 67%, 0.1);
+}
+
+.row.orangey {
+    color: var(--Orangey-yellow);
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.row.green {
+    color: var(--Green-teal);
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.row.cobalt {
+    color: var(--Cobalt-blue);
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+/* end of Row colors */
+
+.btn {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    background: var(--Dark-gray-blue);
+    color: var(--White);
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(
+        to bottom,
+        var(--Light-slate-blue-background),
+        var(--Light-royal-blue-background)
+    );
 }
 
 .attribution {
